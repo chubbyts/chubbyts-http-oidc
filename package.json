@@ -1,0 +1,75 @@
+{
+  "name": "@chubbyts/chubbyts-http-oidc",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A minimal OIDC (OpenID Connect) resource server integration for @chubbyts/chubbyts-http-types.",
+  "keywords": [
+    "oidc",
+    "openid-connect",
+    "jwt",
+    "jwks",
+    "bearer",
+    "middleware",
+    "chubbyts",
+    "http"
+  ],
+  "author": "Dominik Zogg",
+  "license": "MIT",
+  "repository": "chubbyts/chubbyts-http-oidc",
+  "scripts": {
+    "build": "rm -Rf dist && tsc",
+    "cs-fix": "prettier --write src tests resources",
+    "cs": "prettier --check src tests resources",
+    "infection": "stryker run",
+    "lint-fix": "oxlint --fix src tests resources vitest.config.ts vitest.integration.config.ts",
+    "lint": "oxlint src tests resources vitest.config.ts vitest.integration.config.ts",
+    "prepare": "pnpm run build",
+    "test:integration": "vitest --config vitest.integration.config.ts",
+    "test": "vitest"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js",
+      "default": "./dist/*.js"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@chubbyts/chubbyts-dic-config-factory": "^1.0.1",
+    "@chubbyts/chubbyts-dic-types": "^2.3.1",
+    "@chubbyts/chubbyts-http-types": "^4.0.0",
+    "@chubbyts/chubbyts-log-types": "^3.3.1",
+    "jose": "^6.2.12"
+  },
+  "devDependencies": {
+    "@chubbyts/chubbyts-dic-config": "^2.3.1",
+    "@chubbyts/chubbyts-function-mock": "^2.3.1",
+    "@chubbyts/chubbyts-http": "^3.0.0",
+    "@chubbyts/chubbyts-oxlint": "^1.0.2",
+    "@stryker-mutator/core": "^10.0.0",
+    "@stryker-mutator/vitest-runner": "^10.0.0",
+    "@types/node": "^26.6.5",
+    "@vitest/coverage-v8": "^4.1.12",
+    "oxlint": "^1.89.0",
+    "prettier": "^3.9.10",
+    "testcontainers": "^12.2.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@11.28.6+sha512.55d90390c3b39042f1505a2697789f0256c6d95bb28bdd7cb731af1887c9f2629ef581acb9f4e4ec772024c8203c2aed22a03299b97103fdcf32668e905d0024"
+}
