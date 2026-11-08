@@ -1,6 +1,6 @@
 import type { JWTPayload } from 'jose';
-import type { Logger } from '@chubbyts/chubbyts-log-types/dist/log';
-import { createLogger } from '@chubbyts/chubbyts-log-types/dist/log';
+import type { Logger } from '@chubbyts/chubbyts-log-types/log';
+import { createLogger } from '@chubbyts/chubbyts-log-types/log';
 import type { Handler } from '@chubbyts/chubbyts-http-types/handler';
 import type { Attributes, Response, ServerRequest } from '@chubbyts/chubbyts-http-types/message';
 import type { ResponseFactory } from '@chubbyts/chubbyts-http-types/message-factory';

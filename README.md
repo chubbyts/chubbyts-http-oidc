@@ -36,9 +36,9 @@ The library is the resource server: it verifies the access token of a request, n
 ## Requirements
 
  * node: >=22
- * [@chubbyts/chubbyts-dic-config-factory][16]: ^1.0.1
- * [@chubbyts/chubbyts-dic-types][14]: ^2.3.1
- * [@chubbyts/chubbyts-log-types][2]: ^3.3.1
+ * [@chubbyts/chubbyts-dic-config-factory][16]: ^1.1.0
+ * [@chubbyts/chubbyts-dic-types][14]: ^2.4.0
+ * [@chubbyts/chubbyts-log-types][2]: ^3.4.0
  * [@chubbyts/chubbyts-http-types][3]: ^4.0.0
  * [jose][4]: ^6.2.12
 
@@ -47,7 +47,7 @@ The library is the resource server: it verifies the access token of a request, n
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-http-oidc][1].
 
 ```sh
-npm i @chubbyts/chubbyts-http-oidc@^1.0.0
+npm i @chubbyts/chubbyts-http-oidc@^1.1.0
 ```
 
 ## Usage
@@ -153,8 +153,8 @@ const oidcAuthenticationMiddleware = createOidcAuthenticationMiddleware(
 The package ships service factories (abstract factories built on [chubbyts-dic-config-factory][16]) for a [chubbyts-dic-config][15] (or any [chubbyts-dic-types][14] compatible) container within `@chubbyts/chubbyts-http-oidc/service-factory`, configured through `config.chubbyts.oidc`. The implementation of the types gets read from the services `serverRequestHelpers`, `responseFactory` and `responseHelpers`, which have to be registered:
 
 ```ts
-import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
-import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
+import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
+import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
 import type { OidcConfig } from '@chubbyts/chubbyts-http-oidc/service-factory';
 import { oidcAuthenticationMiddlewareServiceFactory } from '@chubbyts/chubbyts-http-oidc/service-factory';
 import { createResponseFactory } from '@chubbyts/chubbyts-http/message-factory';

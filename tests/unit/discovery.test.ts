@@ -1,5 +1,5 @@
 import { expect, test, vi } from 'vitest';
-import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/dist/function-mock';
+import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/function-mock';
 import type { OidcConfiguration, OidcConfigurationResolverOptions } from '../../src/discovery.js';
 import { createOidcConfigurationResolver } from '../../src/discovery.js';
 import { OidcConfigurationError } from '../../src/error.js';

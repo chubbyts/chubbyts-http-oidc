@@ -1,8 +1,8 @@
 import { expect, test } from 'vitest';
 import { errors } from 'jose';
-import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/dist/function-mock';
-import { useObjectMock } from '@chubbyts/chubbyts-function-mock/dist/object-mock';
-import type { Logger } from '@chubbyts/chubbyts-log-types/dist/log';
+import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/function-mock';
+import { useObjectMock } from '@chubbyts/chubbyts-function-mock/object-mock';
+import type { Logger } from '@chubbyts/chubbyts-log-types/log';
 import type { Handler } from '@chubbyts/chubbyts-http-types/handler';
 import type { Response, ServerRequest } from '@chubbyts/chubbyts-http-types/message';
 import type { ResponseFactory } from '@chubbyts/chubbyts-http-types/message-factory';

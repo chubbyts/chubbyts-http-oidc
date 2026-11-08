@@ -1,6 +1,6 @@
-import type { Container } from '@chubbyts/chubbyts-dic-types/dist/container';
-import { createAbstractFactory } from '@chubbyts/chubbyts-dic-config-factory/dist/dic-config-factory';
-import type { Logger } from '@chubbyts/chubbyts-log-types/dist/log';
+import type { Container } from '@chubbyts/chubbyts-dic-types/container';
+import { createAbstractFactory } from '@chubbyts/chubbyts-dic-config-factory/dic-config-factory';
+import type { Logger } from '@chubbyts/chubbyts-log-types/log';
 import type { Attributes } from '@chubbyts/chubbyts-http-types/message';
 import type { ResponseFactory } from '@chubbyts/chubbyts-http-types/message-factory';
 import type { ResponseHelpers, ServerRequestHelpers } from '@chubbyts/chubbyts-http-types/message-helper';

@@ -1,7 +1,7 @@
 {
   "name": "@chubbyts/chubbyts-http-oidc",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A minimal OIDC (OpenID Connect) resource server integration for @chubbyts/chubbyts-http-types.",
   "keywords": [
     "oidc",
@@ -47,15 +47,15 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@chubbyts/chubbyts-dic-config-factory": "^1.0.1",
-    "@chubbyts/chubbyts-dic-types": "^2.3.1",
+    "@chubbyts/chubbyts-dic-config-factory": "^1.1.0",
+    "@chubbyts/chubbyts-dic-types": "^2.4.0",
     "@chubbyts/chubbyts-http-types": "^4.0.0",
-    "@chubbyts/chubbyts-log-types": "^3.3.1",
+    "@chubbyts/chubbyts-log-types": "^3.4.0",
     "jose": "^6.2.12"
   },
   "devDependencies": {
-    "@chubbyts/chubbyts-dic-config": "^2.3.1",
-    "@chubbyts/chubbyts-function-mock": "^2.3.1",
+    "@chubbyts/chubbyts-dic-config": "^2.4.0",
+    "@chubbyts/chubbyts-function-mock": "^2.4.0",
     "@chubbyts/chubbyts-http": "^3.0.0",
     "@chubbyts/chubbyts-oxlint": "^1.0.2",
     "@stryker-mutator/core": "^10.0.0",
